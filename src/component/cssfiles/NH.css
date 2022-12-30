@@ -1,0 +1,155 @@
+.navbarul a li{
+padding: 0 15px;
+margin: 0 5px;
+font-weight: 600;
+font-size: 17px;
+transition: .3s;
+letter-spacing: .3px;
+}
+.navbarul a li{
+    position: relative;
+    padding: 10px 15px;
+}
+.navbarul a li::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height:3px;
+    background-color: rgb(51, 122, 228);
+    left: 0px;
+    bottom: 0px;
+    transition: .5s;
+}
+.navbarul a li:hover::after{
+    width: 100%;
+}
+.right-nav ul li a:hover{
+color: rgb(227, 19, 255);
+}
+.navbarul a li:hover{
+    color: rgb(51, 122, 228);
+}
+.navbarul a li:active{
+    color: rgb(51, 122, 228);
+}
+.touchbtn{
+    transition: .5s;
+    letter-spacing: .3px;
+}
+.touchbtn:hover{
+    background: rgb(164, 221, 248);
+    color:black;
+}
+
+/* ######### Home ################ */
+.homeimg{
+    height: 530px;
+    /* width: 70%; */
+}
+.roundbtn{
+    transition: .5s;
+}
+.roundbtn:hover{
+    background: rgb(218, 211, 211);
+}
+/* ################### services ################ */
+.innerdiv{
+    width: 98%;
+}
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$ Contact form    @@@@@@@@@@@@@@@@@@@@ */
+.conright{
+    /* width: 50%; */
+    /* margin: 62px 0px; */
+    position: relative;
+}
+.mlogin{
+    display: flex;
+    flex-wrap: wrap;
+}
+.smallinput{
+    background: #6e666670;
+    width: 43%;
+    height: 40px;
+    margin: 0 10px;
+    color: white;
+    border: none !important;
+    outline: none;
+    padding: 0 10px;
+}
+.smallinput::placeholder{
+    color: white;
+}
+.smallinput :active{
+    background: #6e666670;
+    border: none;
+}
+.texta{
+    background: #6e666670;
+    width: 90%;
+    height: 100px;
+    margin: 25px 10px;
+    color: white;
+    border: none !important;
+    outline: none;
+    padding: 0 10px;
+}
+.texta::placeholder{
+    color: white;
+}
+.texta :active{
+    background: #6e666670;
+    border: none;
+}
+.closebb{
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+    height: 40px;
+    width: 26%;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0px;
+    transition: .5s;
+}
+/* .closebb:hover{
+    background-color:#6e666670 ;
+    color: white;
+} */
+@media only screen and (min-device-width:100px) and (max-width:1020px) {/*##### 9 2 0 ########*/
+    .contact{
+        width: 97%;
+    }
+    .conleft a p{
+        font-size: 14px;
+    }
+}
+/* .conright{
+    width: 100%;
+  } */
+  .closebb{
+    bottom:-40px;
+  }
+  .contact {
+    margin: 18px auto;
+  }
+  .texta{
+    width: 93%;
+  }
+  .smallinput{
+    width: 45%;
+  }
+  .mlogin{
+    display: flex;
+justify-content: center;
+align-items: center;
+  }
+  @media only screen and (min-device-width:100px) and (max-width:500px) {
+      .smallinput{
+        margin: 0 5px;
+      }}
