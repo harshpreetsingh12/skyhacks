@@ -11,23 +11,9 @@ import eleven from '../img/11.png'
 import twelve from '../img/12.png'
 import port from '../img/port.png'
 function OurProjects () {
-    useEffect(() => {
-        var line1=document.getElementById("line1")
-        var line2=document.getElementById("line2")
-        var line3=document.getElementById("line3")
-        document.getElementById("fullnav").style.right="-200px"
-        line1.style.display="block"
-            line2.style.bottom="15px"
-            line2.style.right="0px"
-            line2.style.transform="rotate(0deg)"
-            line3.style.bottom="5px"
-            line3.style.right="0px"
-            line3.style.transform="rotate(0deg)"
-    }, []);
   return (
-    <div className='w-full p-2 py-10 md:p-20 flex flex-col justify-center items-center'>
+    <div className='w-full p-2 py-10 md:p-20 flex flex-col justify-center items-center' id='works'>
         <h1 className='text-black font-bold text-xl md:text-3xl mb-5 '>Our Projects</h1>
-        {/* <p className='text-gray-600 text-xl font-extrabold'>Our Projects</p> */}
         <Splide className='my-10 md:my-2' options={{
             perPage:2,
             type: "loop",
@@ -75,6 +61,7 @@ function OurProjects () {
             <img src={thirt} className='w-56 h-36 md:w-72 md:h-48 z-1 absolute top-21'/>
         </div>
             <h1 className='text-black text-xl font-extrabold absolute bottom-3 left-3'>Youtube 2.0</h1>
+            
         </Link>
         </SplideSlide>           
             <SplideSlide key={2}>
